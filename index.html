@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-logo">P & E</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="photos">Photos</a></li>
+                <li><a href="#" class="nav-link" data-target="rsvp">RSVP</a></li>
+                <li><a href="#" class="nav-link" data-target="registry">Registry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Containers -->
+    <main class="content-container">
+
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <div class="hero-content">
+                <h1>Porter & Emma</h1>
+                <p class="wedding-date">August 1st, 2026 • Rexburg, ID</p>
+                <div class="hero-divider"></div>
+                <p class="welcome-text">We can't wait to celebrate our special day with the people we love most. Explore our photos, view our registry, and please let us know if you can make it by completing the RSVP form.</p>
+                <button class="btn CTA-btn" onclick="navigateToPage('rsvp')">RSVP Online</button>
+            </div>
+        </section>
+
+        <!-- Photos Page -->
+        <!-- <section id="photos" class="page-section">
+            <h2>Our Story in Photos</h2>
+            <p class="section-subtitle">A few of our favorite moments together</p>
+            
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="https://via.placeholder.com/600x800" alt="Couples photo 1">
+                    <div class="photo-caption">The Proposal</div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://via.placeholder.com/600x800" alt="Couples photo 2">
+                    <div class="photo-caption">Summer Adventures</div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://via.placeholder.com/600x800" alt="Couples photo 3">
+                    <div class="photo-caption">Our Engagement Session</div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://via.placeholder.com/600x800" alt="Couples photo 4">
+                    <div class="photo-caption">Where It All Started</div>
+                </div>
+            </div>
+        </section> -->
+        <section id="photos" class="page-section">
+            <h2>Our Story in Photos</h2>
+            <p class="section-subtitle">A few of our favorite moments together</p>
+            
+            <div class="carousel-category">
+                <h3>High School</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" type="button">&#10094;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.05 AM.png" alt="High School 1"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.00.52 AM.png" alt="High School 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.12 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.17 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.23 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.29 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.40 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.48 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.04.54 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.05.00 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.05.05 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.05.11 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.05.23 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Highschool/Screenshot 2026-06-14 at 1.07.25 AM.png"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" type="button">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-category">
+                <h3>Missions</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" type="button">&#10094;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.29 AM.png" alt="Missions 1"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.18 AM.png" alt="Missions 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.00.46 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.35 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.41 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.48 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.05.56 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.06.03 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Missions/Screenshot 2026-06-14 at 1.07.36 AM.png"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" type="button">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- <div class="carousel-category">
+                <h3>Currently</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" type="button">&#10094;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="currently/photo1.jpg" alt="Currently 1"></div>
+                            <div class="carousel-slide"><img src="currently/photo2.jpg" alt="Currently 2"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" type="button">&#10095;</button>
+                </div>
+            </div> -->
+
+            <div class="carousel-category">
+                <h3>The Proposal</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" type="button">&#10094;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="./Assets/images/The Proposal/Screenshot 2026-06-14 at 1.00.27 AM.png" alt="Proposal 1"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/The Proposal/Screenshot 2026-06-14 at 1.06.54 AM.png" alt="Proposal 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/The Proposal/Screenshot 2026-06-14 at 1.06.59 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/The Proposal/Screenshot 2026-06-14 at 1.07.06 AM.png"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/The Proposal/Screenshot 2026-06-14 at 1.07.12 AM.png"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" type="button">&#10095;</button>
+                </div>
+            </div>
+
+                        <div class="carousel-category">
+                <h3>Now</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" type="button">&#10094;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.48.05 AM.png" alt="Currently 1"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.00.11 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.47.30 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.00.20 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.47.23 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.00.40 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.47.12 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.00.40 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.47.04 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.06.19 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.46.55 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.06.25 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.46.47 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.06.33 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.46.42 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.06.48 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.46.13 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.07.19 AM.png" alt="Currently 2"></div>
+                            <div class="carousel-slide"><img src="./Assets/images/Currently/Screenshot 2026-06-14 at 1.46.03 AM.png" alt="Currently 2"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" type="button">&#10095;</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- RSVP Page -->
+        <section id="rsvp" class="page-section">
+            <h2>Kindly Reply</h2>
+            <p class="section-subtitle">Please respond as soon as possible so we can plan for you!</p>
+
+            <div class="form-card">
+                <form id="rsvpForm" action="https://formspree.io/f/xqeowpnd" method="POST">
+                    <div class="form-group">
+                        <label for="guestName">Name</label>
+                        <input type="text" id="guestName" name="guestName" required placeholder="First and last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Will you be attending?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="yes" required> Yes!
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="no"> I can't
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group conditional-field" id="dietaryGroup">
+                        <label for="number-in-group">Please indicate how many will be coming in your group:</label>
+                        <input type="number" id="number-in-group" name="number-in-group" placeholder="1" required>
+                    </div>
+
+                    <!-- <div class="form-group conditional-field" id="songGroup">
+                        <label for="songRequest">Song request for the dance floor</label>
+                        <input type="text" id="songRequest" name="songRequest" placeholder="Song title and artist">
+                    </div> -->
+
+                    <button type="submit" class="btn submit-btn">Submit RSVP</button>
+                </form>
+                
+                <!-- Success Message (Hidden by default) -->
+                <div id="successMessage" class="success-message hidden">
+                    <h3>Thank you for your response!</h3>
+                    <p>Your RSVP details have been submitted successfully.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registry Page -->
+        <section id="registry" class="page-section">
+            <h2>Registry & Contributions</h2>
+            <p class="section-subtitle">Your presence is our greatest gift, but if you wish to honor us with a gesture, we have options below.</p>
+
+            <div class="registry-links">
+                <!-- Standard Registry Card -->
+                <div class="link-card">
+                    <h3>Our Wedding Registry</h3>
+                    <p>We’ve curated a wishlist of items for our home together on Amazon.</p>
+                    <a href="https://www.amazon.com/wedding/guest-view/3R7B0HII4UWUP" target="_blank" class="btn registry-btn">View Registry</a>
+                    <!-- <a href="https://www.amazon.com" target="_blank" class="btn registry-btn outlined">View Amazon Registry</a> -->
+                </div>
+
+                <!-- Venmo / Honeymoon Fund Card -->
+                <div class="link-card highlight-card">
+                    <h3>Honeymoon Fund</h3>
+                    <p>If you prefer to contribute toward our honeymoon trip and starting our new chapter, digital gifts can be sent via Venmo.</p>
+                    <!-- Replace with your actual Venmo link/username -->
+                    <a href="https://venmo.com/your-username-here" target="_blank" class="btn venmo-btn">
+                        Contribute via Venmo
+                    </a>
+                    <span class="venmo-handle">@Your-Venmo-Handle</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porter & Emma. Built with love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
